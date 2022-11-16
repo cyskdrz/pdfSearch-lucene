@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>文献检索系统</title>
+	<link rel="stylesheet" href="./index/index.css">
+</head>
+<body style="background-image: url(./index/back1.jpg) ;background-size: cover;">
+		
+	<center>
+		<div class="text">文献检索系统</div>
+		<div class="search-box">
+			<input class="search-txt" type="text" id="inp" placeholder="请输入目标文献的关键词"/>
+			<select class="select" id="type">
+				<option selected >全文</option>
+				<option >标题</option>
+				<option >作者</option>
+				<option >地区</option>
+				<option >摘要</option>
+				<option >类型</option>
+				<option >日期</option>
+			</select>
+			<input class="search-btn" type='submit' id='btn' value='&#xf002' />
+		</div>
+		<div class="author">Produced by sHiKi、胡大宇、李淇</div>
+		<div>			
+		</div>
+	</center>
+	
+	
+</body>
+
+
+<script>
+	var oBtn = document.getElementById('btn');
+	
+	oBtn.onclick = function () {
+		Search();
+	}
+
+	document.onkeydown = function () {
+		if (event.keyCode == 13) {
+			Search();
+		}
+	}
+
+	function Search() {
+		var oInp = document.getElementById("inp").value;
+		var oSel = document.getElementById("type").value;
+		var url = './result.jsp?query=' + oInp + '&type=' + oSel + '&pageSize=10&page=1';
+		window.open(url,'_self');
+		
+	}
+</script>
+</html>

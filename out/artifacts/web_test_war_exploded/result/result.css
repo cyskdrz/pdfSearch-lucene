@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('./fontawesome-webfont.eot');
+    src: url('./fontawesome-webfont.eot') format('embedded-opentype'),
+         url('./fontawesome-webfont.woff2') format('woff2'),
+         url('./fontawesome-webfont.woff') format('woff'),
+         url('./fontawesome-webfont.ttf') format('truetype'),
+         url('./fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.search-box {
+    position: absolute;
+    left: 12%;
+    background: #ffffff;
+    height: 40px;
+    border: 10px;
+    border-radius: 40px;
+    padding: 10px;
+    opacity: 1;
+    border: 2px black solid;
+}
+
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0 6px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    line-height: 40px;
+    width: 500px;
+}
+
+.select1 {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0 6px;
+    color: #010101;
+    font-size: 20px;
+    line-height: 40px;
+    height: 40px;
+    width: 76px;
+    margin-right: 15px;
+    border-left: 1px solid gray;
+}
+
+.search-btn {
+    font-family: "FontAwesome";
+    font-size: 30px;
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;	
+    border: 10px;
+    border-radius: 50%;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.text1 {
+    position: absolute;
+    background: #ffffff;
+    color: gray;
+    left: 0%;
+    top: 25px;
+    font-weight: 700;
+    font-family: "楷体";
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.text2 {
+    position: absolute;
+    top:85px;
+    left: 13%;
+    background: #ffffff;
+    color: gray;
+    font-size: 15px;
+    line-height: 10px;
+}
+
+.select2 {
+    position: absolute;
+    top:78px;
+    height: 24px;
+    border: 1px black solid;
+    left: 20%;
+    background: #ffffff;
+    color: gray;
+    font-size: 15px;
+    line-height: 10px;
+}
+
+.dispAll {
+    position: absolute;
+    top: 120px;
+    left: 12%;
+    height: auto;
+    /* background-color: pink; */
+    width: 60%;
+}
+
+.dispSmall {
+    width: 100%;
+    height: auto;
+}
+
+.dispa {
+    color: blue;
+    font-size: 20px;
+}
+
+.dispp {
+    color: #524F4F;
+}
+
+.page {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    font-size: 20px;
+}
+.pageSelect {
+    background-color: blue;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    font-size: 20px;
+}
+
+.page:hover {
+    background-color: blue;
+    color: white;
+}
